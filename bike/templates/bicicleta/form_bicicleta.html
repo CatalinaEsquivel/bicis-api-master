@@ -17,21 +17,19 @@
             <div class="cont">
                 <h2>Agregar</h2>
             </div>
-            <form id="form" class="form">
-                <div class="row">
-                    <form action="" method="POST" id="formulario" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            {{form.as_table}}
-                        </div>
-                        <input type="submit" class="btn btn-primary" id="enviar" value="Guardar">
-                        <input type="rest" class="btn btn-danger" id="limpiar" value="Limpiar">
-                        <div class="alert alert-succes" role="alert">
-                            {{mensaje}}
-                        </div>
-                    </form>
-                </div>
-            </form>
+            <div class="row">
+                <form action="" method="POST" id="formulario" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        {{form.as_table}}
+                    </div>
+                    <input type="submit" class="btn btn-primary" id="enviar" value="Guardar">
+                    <input type="rest" class="btn btn-danger" id="limpiar" value="Limpiar">
+                    <div class="alert alert-succes" role="alert">
+                        {{mensaje}}
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 </body>
