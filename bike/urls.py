@@ -20,7 +20,3 @@ urlpatterns = [
     path('modificar-bicicleta/<id>', form_mod_bicicleta, name="form_mod_bicicleta"),
     path('eliminar-bicicleta/<id>', form_de_bicicleta, name="form_de_bicicleta"),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    
